@@ -72,4 +72,7 @@ public class AlertPage extends BasePage {
         MobileElement alertOkButton = (MobileElement) driver.findElementsByClassName("android.widget.Button").get(0);
         alertOkButton.click();
     }
+    /**
+     * test
+     */
 }
