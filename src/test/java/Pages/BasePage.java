@@ -33,7 +33,7 @@ public abstract class BasePage {
     protected final AppiumDriver driver;
 
     /**
-     * A base constructor that sets the page's driver
+     * Testing.  A base constructor that sets the page's driver
      *
      * The page structure is being used within this test in order to separate the
      * page actions from the tests.
