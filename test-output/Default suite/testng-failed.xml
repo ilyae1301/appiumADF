@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.Inputs.ToggleButtonTest">
+      <class name="Tests.WebViewTest">
         <methods>
-          <include name="turnViewOn"/>
           <include name="setUpAppium"/>
+          <include name="testWebView"/>
         </methods>
-      </class> <!-- Tests.Inputs.ToggleButtonTest -->
+      </class> <!-- Tests.WebViewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
