@@ -15,11 +15,14 @@
 
 package Tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import Pages.WebViewPage;
 import Tests.AbstractBaseTests.TestBase;
-import org.testng.Assert;
+import java.io.File;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 /**
  * Tests for a webview
@@ -51,6 +54,12 @@ public class WebViewTest extends TestBase {
     @Test
     public void testWebView() throws InterruptedException {
         webViewPage.gotoUrl(FULL_URL);
-        Assert.assertTrue(webViewPage.getWebDescription(WEBVIEW_ACCESSIBILITY));
+        AssertJUnit.assertTrue(webViewPage.getWebDescription(WEBVIEW_ACCESSIBILITY));
+    }
+    public boolean takeScreenshot(final String name) {
+        String screenshotDirectory = System.getProperty("appium.screenshots.dir", System.getProperty("java.io.tmpdir", ""));
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        //System.console().writer().println((screenshot.getPath().toString()));
+        return screenshot.renameTo(new File(screenshotDirectory, String.format("%s.png", name)));
     }
 }
