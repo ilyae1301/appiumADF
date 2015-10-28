@@ -1,37 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20470" started-at="2015-10-27T18:03:18Z" finished-at="2015-10-27T18:03:38Z">
+  <suite name="Default suite" duration-ms="43821" started-at="2015-10-28T02:23:09Z" finished-at="2015-10-28T02:23:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20470" started-at="2015-10-27T18:03:18Z" finished-at="2015-10-27T18:03:38Z">
-      <class name="Tests.WebViewTest">
-        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="setUpAppium" is-config="true" duration-ms="11330" started-at="2015-10-27T14:03:07Z" finished-at="2015-10-27T14:03:18Z">
+    <test name="Default test" duration-ms="43821" started-at="2015-10-28T02:23:09Z" finished-at="2015-10-28T02:23:53Z">
+      <class name="Tests.LoginTest">
+        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpAppium" is-config="true" duration-ms="13384" started-at="2015-10-27T22:22:56Z" finished-at="2015-10-27T22:23:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpAppium -->
-        <test-method status="PASS" signature="setUpPage()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="setUpPage" is-config="true" duration-ms="149" started-at="2015-10-27T14:03:18Z" finished-at="2015-10-27T14:03:18Z">
+        <test-method status="PASS" signature="setUpPage()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpPage" is-config="true" duration-ms="226" started-at="2015-10-27T22:23:09Z" finished-at="2015-10-27T22:23:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method status="PASS" signature="navigateTo()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="navigateTo" is-config="true" duration-ms="3413" started-at="2015-10-27T14:03:18Z" finished-at="2015-10-27T14:03:21Z">
+        <test-method status="PASS" signature="navigateTo()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="navigateTo" is-config="true" duration-ms="2830" started-at="2015-10-27T22:23:09Z" finished-at="2015-10-27T22:23:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateTo -->
-        <test-method status="PASS" signature="testWebView()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="testWebView" duration-ms="13969" started-at="2015-10-27T14:03:21Z" finished-at="2015-10-27T14:03:35Z">
+        <test-method status="PASS" signature="loginFail()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginFail" duration-ms="17179" started-at="2015-10-27T22:23:12Z" finished-at="2015-10-27T22:23:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWebView -->
-        <test-method status="PASS" signature="restartApp()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="restartApp" is-config="true" duration-ms="2924" started-at="2015-10-27T14:03:35Z" finished-at="2015-10-27T14:03:38Z">
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="3111" started-at="2015-10-27T22:23:29Z" finished-at="2015-10-27T22:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="loginSuccessFully()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginSuccessFully" duration-ms="14657" started-at="2015-10-27T22:23:32Z" finished-at="2015-10-27T22:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessFully -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="2784" started-at="2015-10-27T22:23:47Z" finished-at="2015-10-27T22:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="restartApp()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="restartApp" is-config="true" duration-ms="3008" started-at="2015-10-27T22:23:50Z" finished-at="2015-10-27T22:23:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restartApp -->
-        <test-method status="PASS" signature="tearDownAppium()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="tearDownAppium" is-config="true" duration-ms="843" started-at="2015-10-27T14:03:38Z" finished-at="2015-10-27T14:03:39Z">
+        <test-method status="PASS" signature="tearDownAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="tearDownAppium" is-config="true" duration-ms="813" started-at="2015-10-27T22:23:53Z" finished-at="2015-10-27T22:23:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAppium -->
-      </class> <!-- Tests.WebViewTest -->
+      </class> <!-- Tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

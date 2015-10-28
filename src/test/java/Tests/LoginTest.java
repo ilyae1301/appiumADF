@@ -26,6 +26,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import Tests.TakeScreenshot;
 
 /**
  * Tests for a login page
@@ -39,6 +40,10 @@ public class LoginTest extends TestBase {
     private final String FAIL_PASSWORD = "12345";
 
     private LoginPage loginPage;
+    
+    private TakeScreenshot takeScreenshot = new TakeScreenshot();
+    
+    
 
     @Override
     public String getName() {
@@ -61,6 +66,12 @@ public class LoginTest extends TestBase {
     public void loginSuccessFully(){
         loginPage.loginIn(CORRECT_USER_NAME, CORRECT_PASSWORD);
         Assert.assertEquals(loginPage.getMessage(), LOGIN_SUCCESS_MESSAGE);
+        try {
+			takeScreenshot.test01("loginSuccess");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 
     /**
@@ -70,6 +81,12 @@ public class LoginTest extends TestBase {
     public void loginFail() {
         loginPage.loginIn(FAIL_USER_NAME, FAIL_PASSWORD);
         Assert.assertEquals(loginPage.getMessage(), LOGIN_FAIL_MESSAGE);
+        try {
+			takeScreenshot.test01("loginFail");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 
     /**
@@ -79,11 +96,11 @@ public class LoginTest extends TestBase {
     public void logOut(){
         loginPage.pressAltButton();
         Assert.assertTrue(loginPage.checkIfBackAtLogin());
-    }
-    public boolean takeScreenshot(final String name) {
-        String screenshotDirectory = System.getProperty("appium.screenshots.dir", System.getProperty("java.io.tmpdir", ""));
-        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        //System.console().writer().println((screenshot.getPath().toString()));
-        return screenshot.renameTo(new File(screenshotDirectory, String.format("%s.png", name)));
+        try {
+			takeScreenshot.test01("logOut");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 }
