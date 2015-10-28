@@ -18,15 +18,11 @@ package Tests;
 import Pages.LoginPage;
 import Tests.AbstractBaseTests.TestBase;
 
-import java.io.File;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import Tests.TakeScreenshot;
+import Tests.Screenshot;
 
 /**
  * Tests for a login page
@@ -41,9 +37,7 @@ public class LoginTest extends TestBase {
 
     private LoginPage loginPage;
     
-    private TakeScreenshot takeScreenshot = new TakeScreenshot();
-    
-    
+    private Screenshot screenShot = new Screenshot();
 
     @Override
     public String getName() {
@@ -66,12 +60,7 @@ public class LoginTest extends TestBase {
     public void loginSuccessFully(){
         loginPage.loginIn(CORRECT_USER_NAME, CORRECT_PASSWORD);
         Assert.assertEquals(loginPage.getMessage(), LOGIN_SUCCESS_MESSAGE);
-        try {
-			takeScreenshot.test01("loginSuccess");
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		screenShot.takeScreenshot("loginSuccess", driver);
     }
 
     /**
@@ -81,13 +70,8 @@ public class LoginTest extends TestBase {
     public void loginFail() {
         loginPage.loginIn(FAIL_USER_NAME, FAIL_PASSWORD);
         Assert.assertEquals(loginPage.getMessage(), LOGIN_FAIL_MESSAGE);
-        try {
-			takeScreenshot.test01("loginFail");
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+        screenShot.takeScreenshot("loginFail", driver);
 		}
-    }
 
     /**
      * After each test method, logout or try again
@@ -96,11 +80,6 @@ public class LoginTest extends TestBase {
     public void logOut(){
         loginPage.pressAltButton();
         Assert.assertTrue(loginPage.checkIfBackAtLogin());
-        try {
-			takeScreenshot.test01("logOut");
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		screenShot.takeScreenshot("logOut", driver);
     }
 }

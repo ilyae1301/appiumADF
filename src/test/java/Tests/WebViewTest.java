@@ -20,7 +20,7 @@ import org.testng.AssertJUnit;
 import Pages.WebViewPage;
 import Tests.AbstractBaseTests.TestBase;
 import org.testng.annotations.BeforeTest;
-import Tests.TakeScreenshot;
+import Tests.Screenshot;
 
 /**
  * Tests for a webview
@@ -31,7 +31,7 @@ public class WebViewTest extends TestBase {
 
     private WebViewPage webViewPage;
     
-    private TakeScreenshot takeScreenshot;
+    private Screenshot screenShot = new Screenshot();
     
     @Override
     public String getName() {
@@ -55,6 +55,6 @@ public class WebViewTest extends TestBase {
     public void testWebView() throws InterruptedException {
         webViewPage.gotoUrl(FULL_URL);
         AssertJUnit.assertTrue(webViewPage.getWebDescription(WEBVIEW_ACCESSIBILITY));
-        takeScreenshot.takeScreenshot("WebView");
+        screenShot.takeScreenshot("WebView", driver);
     }
 }
