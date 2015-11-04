@@ -20,12 +20,14 @@ import Tests.AbstractBaseTests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import Tests.Screenshot;
 
 /**
  * Tests for Device Farm fixtures
  */
 public class FixturesTest extends TestBase {
     private FixturesPage fixturesPage;
+    private Screenshot screenShot = new Screenshot();
 
     @Override
     public String getName() {
@@ -47,6 +49,7 @@ public class FixturesTest extends TestBase {
     @Test
     public void testWifiOn(){
         Assert.assertTrue(Boolean.parseBoolean(fixturesPage.getWifi()));
+		screenShot.takeScreenshot("getWifi", driver);
     }
 
     /**
@@ -55,6 +58,7 @@ public class FixturesTest extends TestBase {
     @Test
     public void testBluetoothOn(){
         Assert.assertTrue(Boolean.parseBoolean(fixturesPage.getBluetooth()));
+        screenShot.takeScreenshot("getBluetooth", driver);
     }
 
     /**
