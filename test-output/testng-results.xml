@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" total="2" passed="0">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="250" started-at="2015-11-01T02:54:18Z" finished-at="2015-11-01T02:54:18Z">
+  <suite name="Default suite" duration-ms="25837" started-at="2015-11-04T17:58:29Z" finished-at="2015-11-04T17:58:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="250" started-at="2015-11-01T02:54:18Z" finished-at="2015-11-01T02:54:18Z">
-      <class name="Tests.LoginTest">
-        <test-method status="FAIL" signature="setUpAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpAppium" is-config="true" duration-ms="0" started-at="2015-10-31T22:54:15Z" finished-at="2015-10-31T22:54:15Z">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'LGA-1850012673', ip: '10.50.56.28', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
+    <test name="Default test" duration-ms="25837" started-at="2015-11-04T17:58:29Z" finished-at="2015-11-04T17:58:55Z">
+      <class name="Tests.WebViewTest">
+        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="setUpAppium" is-config="true" duration-ms="1372" started-at="2015-11-04T12:58:28Z" finished-at="2015-11-04T12:58:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAppium -->
+        <test-method status="PASS" signature="setUpPage()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="setUpPage" is-config="true" duration-ms="235" started-at="2015-11-04T12:58:29Z" finished-at="2015-11-04T12:58:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method status="PASS" signature="navigateTo()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="navigateTo" is-config="true" duration-ms="3283" started-at="2015-11-04T12:58:30Z" finished-at="2015-11-04T12:58:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateTo -->
+        <test-method status="FAIL" signature="testWebView()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="testWebView" duration-ms="19349" started-at="2015-11-04T12:58:33Z" finished-at="2015-11-04T12:58:52Z">
+          <exception class="java.lang.AssertionError">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'LGA-1850012673', ip: '10.50.56.28', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
-Driver info: driver.version: AndroidDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:22)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:202)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:50)
-	at Tests.AbstractBaseTests.TestBase.setUpAppium(TestBase.java:80)
+              <![CDATA[java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+	at Tests.WebViewTest.testWebView(WebViewTest.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
@@ -49,73 +51,21 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)
-	... 28 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
-	... 41 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpAppium -->
-        <test-method status="SKIP" signature="setUpPage()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpPage" is-config="true" duration-ms="0" started-at="2015-10-31T22:54:18Z" finished-at="2015-10-31T22:54:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpPage -->
-        <test-method status="SKIP" signature="navigateTo()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="navigateTo" is-config="true" duration-ms="0" started-at="2015-10-31T22:54:18Z" finished-at="2015-10-31T22:54:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateTo -->
-        <test-method status="SKIP" signature="loginFail()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginFail" duration-ms="3" started-at="2015-10-31T22:54:18Z" finished-at="2015-10-31T22:54:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFail -->
-        <test-method status="SKIP" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="0" started-at="2015-10-31T22:54:18Z" finished-at="2015-10-31T22:54:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="SKIP" signature="loginSuccessFully()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginSuccessFully" duration-ms="3" started-at="2015-10-31T22:54:18Z" finished-at="2015-10-31T22:54:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccessFully -->
-        <test-method status="SKIP" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="0" started-at="2015-10-31T22:54:18Z" finished-at="2015-10-31T22:54:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="SKIP" signature="restartApp()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="restartApp" is-config="true" duration-ms="0" started-at="2015-10-31T22:54:18Z" finished-at="2015-10-31T22:54:18Z">
+        </test-method> <!-- testWebView -->
+        <test-method status="PASS" signature="restartApp()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="restartApp" is-config="true" duration-ms="2953" started-at="2015-11-04T12:58:52Z" finished-at="2015-11-04T12:58:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restartApp -->
-        <test-method status="SKIP" signature="tearDownAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="tearDownAppium" is-config="true" duration-ms="0" started-at="2015-10-31T22:54:18Z" finished-at="2015-10-31T22:54:18Z">
+        <test-method status="PASS" signature="tearDownAppium()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="tearDownAppium" is-config="true" duration-ms="838" started-at="2015-11-04T12:58:55Z" finished-at="2015-11-04T12:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAppium -->
-      </class> <!-- Tests.LoginTest -->
+      </class> <!-- Tests.WebViewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

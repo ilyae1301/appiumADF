@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.LoginTest">
+      <class name="Tests.WebViewTest">
         <methods>
-          <include name="loginFail"/>
           <include name="setUpAppium"/>
-          <include name="loginSuccessFully"/>
+          <include name="setUpPage"/>
+          <include name="restartApp"/>
+          <include name="tearDownAppium"/>
+          <include name="testWebView"/>
+          <include name="navigateTo"/>
         </methods>
-      </class> <!-- Tests.LoginTest -->
+      </class> <!-- Tests.WebViewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
