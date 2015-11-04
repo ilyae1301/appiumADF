@@ -20,6 +20,7 @@ import Tests.AbstractBaseTests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import Tests.Screenshot;
 
 /**
  * Tests for homepage
@@ -29,6 +30,8 @@ public class HomePageTest extends TestBase {
     private final String HOMEPAGE_SUBHEADER = "version 1";
 
     private HomePage homePageTest;
+    
+    private Screenshot screenShot = new Screenshot();
 
     /**
      * Sets up homepage
@@ -45,6 +48,7 @@ public class HomePageTest extends TestBase {
     @Test
     public void testHomePageHeadline() {
         Assert.assertEquals(homePageTest.getHeadlineValue(), HOMEPAGE_HEADLINE);
+        screenShot.takeScreenshot("homepage_headline", driver);
     }
 
     /**

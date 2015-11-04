@@ -5,11 +5,8 @@
     <classes>
       <class name="Tests.LoginTest">
         <methods>
-          <include name="setUpPage"/>
-          <include name="logOut"/>
           <include name="loginFail"/>
           <include name="setUpAppium"/>
-          <include name="navigateTo"/>
           <include name="loginSuccessFully"/>
         </methods>
       </class> <!-- Tests.LoginTest -->
