@@ -58,7 +58,6 @@ public class FixturesTest extends TestBase {
     @Test
     public void testBluetoothOn(){
         Assert.assertTrue(Boolean.parseBoolean(fixturesPage.getBluetooth()));
-        screenShot.takeScreenshot("getBluetooth", driver);
     }
 
     /**
