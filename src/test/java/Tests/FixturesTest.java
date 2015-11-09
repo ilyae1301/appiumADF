@@ -67,6 +67,7 @@ public class FixturesTest extends TestBase {
     @Test
     public void testGPSOn(){
         Assert.assertTrue(Boolean.parseBoolean(fixturesPage.getGps()));
+        screenShot.takeScreenshot("getGPS", driver);
     }
 
     /**
