@@ -48,9 +48,7 @@ public class FixturesTest extends TestBase {
      */
     @Test
     public void testWifiOn(){
-        Assert.assertTrue(Boolean.parseBoolean(fixturesPage.getWifi()));
-		screenShot.takeScreenshot("getWifi", driver);
-    }
+        Assert.assertTrue(Boolean.parseBoolean(fixturesPage.getWifi()));    }
 
     /**
      * Tests to see if the bluetooth is on
