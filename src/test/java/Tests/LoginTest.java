@@ -60,7 +60,7 @@ public class LoginTest extends TestBase {
     public void loginSuccessFully(){
         loginPage.loginIn(CORRECT_USER_NAME, CORRECT_PASSWORD);
         Assert.assertEquals(loginPage.getMessage(), LOGIN_SUCCESS_MESSAGE);
-		screenShot.takeScreenshot("loginSuccess", driver);
+		//screenShot.takeScreenshot("loginSuccess", driver);
     }
 
     /**
@@ -80,6 +80,6 @@ public class LoginTest extends TestBase {
     public void logOut(){
         loginPage.pressAltButton();
         Assert.assertTrue(loginPage.checkIfBackAtLogin());
-		screenShot.takeScreenshot("logOut", driver);
+		//screenShot.takeScreenshot("logOut", driver);
     }
 }

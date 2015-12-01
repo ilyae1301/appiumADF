@@ -1,71 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25837" started-at="2015-11-04T17:58:29Z" finished-at="2015-11-04T17:58:55Z">
+  <suite name="Default suite" duration-ms="43773" started-at="2015-12-01T16:47:05Z" finished-at="2015-12-01T16:47:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25837" started-at="2015-11-04T17:58:29Z" finished-at="2015-11-04T17:58:55Z">
-      <class name="Tests.WebViewTest">
-        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="setUpAppium" is-config="true" duration-ms="1372" started-at="2015-11-04T12:58:28Z" finished-at="2015-11-04T12:58:29Z">
+    <test name="Default test" duration-ms="43773" started-at="2015-12-01T16:47:05Z" finished-at="2015-12-01T16:47:49Z">
+      <class name="Tests.LoginTest">
+        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpAppium" is-config="true" duration-ms="17640" started-at="2015-12-01T11:46:47Z" finished-at="2015-12-01T11:47:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpAppium -->
-        <test-method status="PASS" signature="setUpPage()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="setUpPage" is-config="true" duration-ms="235" started-at="2015-11-04T12:58:29Z" finished-at="2015-11-04T12:58:30Z">
+        <test-method status="PASS" signature="setUpPage()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpPage" is-config="true" duration-ms="179" started-at="2015-12-01T11:47:05Z" finished-at="2015-12-01T11:47:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method status="PASS" signature="navigateTo()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="navigateTo" is-config="true" duration-ms="3283" started-at="2015-11-04T12:58:30Z" finished-at="2015-11-04T12:58:33Z">
+        <test-method status="PASS" signature="navigateTo()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="navigateTo" is-config="true" duration-ms="2826" started-at="2015-12-01T11:47:05Z" finished-at="2015-12-01T11:47:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateTo -->
-        <test-method status="FAIL" signature="testWebView()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="testWebView" duration-ms="19349" started-at="2015-11-04T12:58:33Z" finished-at="2015-11-04T12:58:52Z">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
-	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
-	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
-	at Tests.WebViewTest.testWebView(WebViewTest.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="loginFail()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginFail" duration-ms="17167" started-at="2015-12-01T11:47:08Z" finished-at="2015-12-01T11:47:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWebView -->
-        <test-method status="PASS" signature="restartApp()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="restartApp" is-config="true" duration-ms="2953" started-at="2015-11-04T12:58:52Z" finished-at="2015-11-04T12:58:55Z">
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="3002" started-at="2015-12-01T11:47:25Z" finished-at="2015-12-01T11:47:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="loginSuccessFully()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginSuccessFully" duration-ms="14298" started-at="2015-12-01T11:47:28Z" finished-at="2015-12-01T11:47:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessFully -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="3310" started-at="2015-12-01T11:47:42Z" finished-at="2015-12-01T11:47:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="restartApp()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="restartApp" is-config="true" duration-ms="2971" started-at="2015-12-01T11:47:46Z" finished-at="2015-12-01T11:47:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restartApp -->
-        <test-method status="PASS" signature="tearDownAppium()[pri:0, instance:Tests.WebViewTest@1a407d53]" name="tearDownAppium" is-config="true" duration-ms="838" started-at="2015-11-04T12:58:55Z" finished-at="2015-11-04T12:58:56Z">
+        <test-method status="PASS" signature="tearDownAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="tearDownAppium" is-config="true" duration-ms="876" started-at="2015-12-01T11:47:49Z" finished-at="2015-12-01T11:47:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAppium -->
-      </class> <!-- Tests.WebViewTest -->
+      </class> <!-- Tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
