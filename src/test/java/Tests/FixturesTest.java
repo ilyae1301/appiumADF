@@ -56,7 +56,7 @@ public class FixturesTest extends TestBase {
     @Test
     public void testBluetoothOn(){
         Assert.assertTrue(Boolean.parseBoolean(fixturesPage.getBluetooth()));
-        screenShot.takeScreenshot("getBluetooth", driver);
+        //screenShot.takeScreenshot("getBluetooth", driver);
     }
 
     /**
@@ -74,6 +74,6 @@ public class FixturesTest extends TestBase {
     @Test
     public void testNFCOn(){
         Assert.assertTrue(Boolean.parseBoolean(fixturesPage.getNfc()));
-		screenShot.takeScreenshot("getNfc", driver);
+		//screenShot.takeScreenshot("getNfc", driver);
     }
 }
