@@ -48,7 +48,7 @@ public class HomePageTest extends TestBase {
     @Test
     public void testHomePageHeadline() {
         Assert.assertEquals(homePageTest.getHeadlineValue(), HOMEPAGE_HEADLINE);
-        screenShot.takeScreenshot("homepage_headline", driver);
+        //screenShot.takeScreenshot("homepage_headline", driver);
     }
 
     /**

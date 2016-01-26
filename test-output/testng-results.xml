@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43773" started-at="2015-12-01T16:47:05Z" finished-at="2015-12-01T16:47:49Z">
+  <suite name="Default suite" duration-ms="38562" started-at="2015-12-01T17:42:05Z" finished-at="2015-12-01T17:42:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43773" started-at="2015-12-01T16:47:05Z" finished-at="2015-12-01T16:47:49Z">
+    <test name="Default test" duration-ms="38562" started-at="2015-12-01T17:42:05Z" finished-at="2015-12-01T17:42:44Z">
       <class name="Tests.LoginTest">
-        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpAppium" is-config="true" duration-ms="17640" started-at="2015-12-01T11:46:47Z" finished-at="2015-12-01T11:47:05Z">
+        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpAppium" is-config="true" duration-ms="13607" started-at="2015-12-01T12:41:52Z" finished-at="2015-12-01T12:42:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpAppium -->
-        <test-method status="PASS" signature="setUpPage()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpPage" is-config="true" duration-ms="179" started-at="2015-12-01T11:47:05Z" finished-at="2015-12-01T11:47:05Z">
+        <test-method status="PASS" signature="setUpPage()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="setUpPage" is-config="true" duration-ms="186" started-at="2015-12-01T12:42:05Z" finished-at="2015-12-01T12:42:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method status="PASS" signature="navigateTo()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="navigateTo" is-config="true" duration-ms="2826" started-at="2015-12-01T11:47:05Z" finished-at="2015-12-01T11:47:08Z">
+        <test-method status="PASS" signature="navigateTo()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="navigateTo" is-config="true" duration-ms="3077" started-at="2015-12-01T12:42:05Z" finished-at="2015-12-01T12:42:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateTo -->
-        <test-method status="PASS" signature="loginFail()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginFail" duration-ms="17167" started-at="2015-12-01T11:47:08Z" finished-at="2015-12-01T11:47:25Z">
+        <test-method status="PASS" signature="loginFail()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginFail" duration-ms="15321" started-at="2015-12-01T12:42:09Z" finished-at="2015-12-01T12:42:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFail -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="3002" started-at="2015-12-01T11:47:25Z" finished-at="2015-12-01T11:47:28Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="2235" started-at="2015-12-01T12:42:24Z" finished-at="2015-12-01T12:42:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="loginSuccessFully()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginSuccessFully" duration-ms="14298" started-at="2015-12-01T11:47:28Z" finished-at="2015-12-01T11:47:42Z">
+        <test-method status="PASS" signature="loginSuccessFully()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="loginSuccessFully" duration-ms="12553" started-at="2015-12-01T12:42:26Z" finished-at="2015-12-01T12:42:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessFully -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="3310" started-at="2015-12-01T11:47:42Z" finished-at="2015-12-01T11:47:46Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="logOut" is-config="true" duration-ms="2198" started-at="2015-12-01T12:42:39Z" finished-at="2015-12-01T12:42:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="restartApp()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="restartApp" is-config="true" duration-ms="2971" started-at="2015-12-01T11:47:46Z" finished-at="2015-12-01T11:47:49Z">
+        <test-method status="PASS" signature="restartApp()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="restartApp" is-config="true" duration-ms="2974" started-at="2015-12-01T12:42:41Z" finished-at="2015-12-01T12:42:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restartApp -->
-        <test-method status="PASS" signature="tearDownAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="tearDownAppium" is-config="true" duration-ms="876" started-at="2015-12-01T11:47:49Z" finished-at="2015-12-01T11:47:50Z">
+        <test-method status="PASS" signature="tearDownAppium()[pri:0, instance:Tests.LoginTest@21bcffb5]" name="tearDownAppium" is-config="true" duration-ms="869" started-at="2015-12-01T12:42:44Z" finished-at="2015-12-01T12:42:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAppium -->
